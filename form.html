@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <form class="form" onsubmit="sendEmail(); reset(); return false;">
+        <h1>Contact Us</h1>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="mail" placeholder="mail">
+        <input type="text" id="phone" placeholder="Phone No.">
+        <textarea id="message" rows="5" placeholder="How can we help you ?"></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script href="smtp.js"></script>
+</body>
+</html>
